@@ -1,0 +1,30 @@
+.container{
+    text-align: center;
+   width: 50%;
+   padding-top: 100px;
+   
+}
+.add-head{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(16, 116, 16);
+}
+.title{
+    margin-top: 30px;
+    border-color:rgb(16, 116, 16);
+}
+.descrption{
+    margin-top: 30px;
+    border-color: rgb(16, 116, 16);
+}
+.date{
+    margin-top: 30px;
+    border-color: rgb(16, 116, 16);
+}
+.submit{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.cancel{
+    margin-top: 30px;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+    <h2 class="add-head">Add a New Task</h2>
+    <input #taskname type="text" class="title form-control" placeholder="Write task name">
+    <textarea #taskdes class="descrption form-control" placeholder="Write task description"></textarea>
+    <input #taskdate type="text" class="date form-control" placeholder="Enter due date">
+    <button class="submit btn btn-success" (click)="addTask(taskname,taskdes,taskdate)" >Submit</button>
+    <a href="" class="cancel btn btn-secondary">Cancel</a>
+
+</div>

@@ -1,0 +1,30 @@
+<div class="parent">
+    <div *ngIf="taskservice.tasks.length==0">
+        <p class="alert alert-danger">
+            No tasks for tody.
+        </p>
+    </div>
+    <div *ngIf="taskservice.tasks.length!=0" >
+        <h5>List of tasks</h5>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let task of taskservice.tasks; index as i">
+                
+                <button class="delete-btn btn btn-danger" (click)="deleteTask(i)" >Delete</button>
+                <a  class="edittask btn btn-secondary"  [routerLink]="['/task-detail',i]">Edit</a>
+                
+                  {{task.title}}
+                  <label class="label">
+                    <input class="check" type="checkbox" [(ngModel)]="task.completed" (change)="toggleTaskCompletion(i)">
+                    is completed!
+                  </label>
+                 
+            </li>
+        </ul>
+        
+    </div>
+
+    <div>
+        <a href="add-task" class="add-button btn btn-primary">Add Task</a>
+    </div>
+
+</div>
